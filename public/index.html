@@ -47,7 +47,7 @@
       if (!text.value) return;
       document.body.classList.remove('hidden-result');
       text.setCustomValidity('');
-      const url = 'https://code39.io/' + encodeURIComponent(text.value) + '.png';
+      const url = location.origin + '/' + encodeURIComponent(text.value) + '.png';
       img.src = url;
       a.href = url;
       a.textContent = url;
